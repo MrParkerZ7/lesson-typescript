@@ -4,7 +4,8 @@
   "description": "",
   "main": "built/app.js",
   "scripts": {
-    "start": "lite-server"
+    "start": "lite-server",
+    "tsc": "tsc -w"
   },
   "author": "",
   "license": "ISC",
