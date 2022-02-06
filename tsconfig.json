@@ -1,12 +1,17 @@
 {
    "compilerOptions": {
-      "module": "commonjs",
+      "module": "es2022",
       "target": "es2021",
       "outDir": "built",
       "rootDir": "src",
       "removeComments": true,
       "noLib": false
    },
+   "lib": [
+      "es2021",
+      "dom",
+      "dom.iterable",
+    ],
    "include": [
       "**/*"
    ],
