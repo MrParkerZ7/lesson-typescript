@@ -18,3 +18,19 @@ let functionType: (a: number, b: number, c: boolean) => number
 functionType = add
 console.log(functionType(number1, number2, true))
 console.log(functionType(number1, number2, false))
+
+console.log("------")
+
+type functionType = (a: number, b: number, c: boolean) => number
+function tryCallBack(n1, n2, callBack: functionType): void {
+   callBack(n1, n2, true)
+}
+tryCallBack(1, 2, add)
+
+console.log("------")
+
+function runError(): never {
+   throw { message: 'Error' }
+}
+
+runError()
